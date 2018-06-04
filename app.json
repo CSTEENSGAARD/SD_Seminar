@@ -1,6 +1,6 @@
 {
   "id": "eb869575-e1fe-40f9-9917-853719371f05",
-  "name": "SD Seminar",
+  "name": "Seminar Module",
   "publisher": "D. E. Veloper",
   "brief": "SD Seminar package",
   "description": "",
@@ -17,7 +17,7 @@
   "platform": "11.0.0.0",
   "application": "11.0.0.0",
   "idRange": {
-    "from": 50100,
-    "to": 50149
+    "from": 123456700,
+    "to": 123456799
   }
 }
