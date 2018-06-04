@@ -33,7 +33,7 @@ page 123456710 "Seminar Registration"
                 field("Seminar Name";"Seminar Name")
                 {
                 }
-                field("Instructor Code";"Instructor Code")
+                field("Instructor Resource No.";"Instructor Resource No.")
                 {
                 }
                 field("Instructor Name";"Instructor Name")
@@ -58,9 +58,15 @@ page 123456710 "Seminar Registration"
                 {
                 }
             }
+            part(SeminarRegistrationLines;"Seminar Registration Subpage")
+            {
+                Caption='Lines';
+                SubPageLink="Document No."= field("No.");
+            }
+
             group("Seminar Room")
             {
-                field("Room Code";"Room Code")
+                field("Room Resource No.";"Room Resource No.")
                 {
                 }
                 field("Room Name";"Room Name")
@@ -104,6 +110,11 @@ page 123456710 "Seminar Registration"
             {
                 SubPageLink="No."=field("Seminar No."); 
             }
+            part("Customer Details FactBox";"Customer Details FactBox")
+            {
+                Provider=SeminarRegistrationLines;
+                SubPageLink="No."=field("Bill-to Customer No.");
+            }           
             systempart("Links";Links)
             {
             }

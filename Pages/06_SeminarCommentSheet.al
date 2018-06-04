@@ -5,7 +5,8 @@ page 123456706 "Seminar Comment Sheet"
     Caption = 'Seminar Comment Sheet';
     PageType = List;
     SourceTable = "Seminar Comment Line";
-
+    UsageCategory = Lists;
+    AutoSplitKey = true;
     layout
     {
         area(content)
@@ -25,4 +26,9 @@ page 123456706 "Seminar Comment Sheet"
             }
         }
     }
+    trigger OnNewRecord(BelowxRec : Boolean);
+    
+    begin
+        SetupNewLine;    
+    end;
 }
