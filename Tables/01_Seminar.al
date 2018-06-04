@@ -90,6 +90,8 @@ table 123456701 Seminar
         }
     }
     
-    
+    var 
+        SeminarSetup : Record "Seminar Setup";
+        
 
 }
