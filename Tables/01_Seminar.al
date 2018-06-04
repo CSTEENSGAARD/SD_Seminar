@@ -158,9 +158,8 @@ table 123456701 Seminar
         //CommentLine.DeleteAll; 
     end;
 
-    local procedure AssistEdit() : Boolean;
-    var
-        myInt : Integer;
+    procedure AssistEdit() : Boolean;
+    
     begin
         with Seminar do begin
             Seminar:=Rec;
