@@ -1,7 +1,6 @@
 tableextension 123456700 "CSD_ResourceExt" extends Resource
 {
-    // CSD1.00 - 2018-01-01- - D. E. Veloper
-    
+    // CSD1.00 - 2018-01-01- - D. E. Veloper   
     
     
     fields
@@ -34,6 +33,7 @@ tableextension 123456700 "CSD_ResourceExt" extends Resource
         field(123456703;"CSD_Quantity Per Day";Integer)
         {
             Caption = 'Quantity Per Day';
+
         }
     }
     
