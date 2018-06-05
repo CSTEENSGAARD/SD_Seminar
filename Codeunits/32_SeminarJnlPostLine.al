@@ -42,9 +42,11 @@ codeunit 123456732 "Seminar Jnl.-Post Line"
             if NextEntryNo = 0 then begin
                 SeminarLedgerEntry.LockTable;
                 if SeminarLedgerEntry.FindLast then
-                    NextEntryNo := SeminarLedgerEntry."Entry No.";
-                NextEntryNo := NextEntryNo + 1;
+                    NextEntryNo := SeminarLedgerEntry."Entry No.";  
+                NextEntryNo := NextEntryNo + 1;                                  
             end;
+
+            NextEntryNo := NextEntryNo + 1;
 
             if "Document Date" = 0D then
                 "Document Date" := "Posting Date";

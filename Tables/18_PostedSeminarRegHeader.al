@@ -4,6 +4,12 @@ table 123456718 "Posted Seminar Reg. Header"
 // Chapter 7 - Lab 3-1
     Caption = 'Posted Seminar Reg. Header';
 
+    // Chapter 8 - Lab 2 - 3
+    // Added LookupPageId & DrilldownPageId properties
+
+    LookupPageId="Posted Seminar Reg. List";
+    DrillDownPageId="Posted Seminar Reg. List";
+
     Fields
     {
         Field(1; "No."; Code[20])
@@ -155,6 +161,12 @@ table 123456718 "Posted Seminar Reg. Header"
         {
             Caption='Source Code';
             TableRelation="Source Code";
+        }
+        
+        field(40;"No. Printed";Integer)
+        {
+            Caption='Source Code';
+            Editable=false;
         }
     }
 
