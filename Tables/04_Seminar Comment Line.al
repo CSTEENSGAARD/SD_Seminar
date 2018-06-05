@@ -62,6 +62,7 @@ table 123456704 "Seminar Comment Line"
         SeminarCommentLine.SetRange("Date",WorkDate);
         if SeminarCommentLine.IsEmpty then
             Date:= WorkDate;
+            
     end;        
 
 
